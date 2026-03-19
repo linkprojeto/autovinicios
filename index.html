@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Oficina AutoVinicios</title>
+
+<link rel="icon" href="logo.png">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<img src="logo.png">
+</div>
+
+<nav>
+
+<a href="#">Início</a>
+<a href="servicos.html">Serviços</a>
+<a href="galeria.html">Oficina</a>
+<a href="#contato">Contato</a>
+
+</nav>
+
+</header>
+
+
+<section class="hero">
+
+<h1 class="watermark">AUTOVINICIOS</h1>
+
+<div class="hero-content">
+<h2>Mecânica Automóvel Profissional</h2>
+<p>Revisões, pneus, travões e diagnóstico eletrónico</p>
+</div>
+
+</section>
+
+
+<section class="services" id="servicos">
+
+<h2>Nossos Serviços</h2>
+
+<div class="grid">
+
+<div class="card">
+  <h3>Troca de Óleo 🛠️</h3>
+  <div class="details">
+    <p>Mão de obra troca de óleo - 50€+iva</p>
+    <p>Mão de obra óleo + 4 filtros - 75€+iva</p>
+    <P>Mão de obra troca embreagem - 300€ + iva
+      OBS: A depender do modelo do carro.
+    </P>
+    <p>Mão de obra troca distribuicao - 200€ +iva 
+      OBS: A depender do modelo do carro.
+    </p>
+  </div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<h3>Ar Condicionado 🥶</h3>
+<div class="details">
+<p>Recarga gás antigo (até 2015) - 60€+iva</p>
+<p>A partir de 2016 - 130€+iva</p>
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<h3>Travões 🛞</h3>
+<div class="details">
+<p>Mão de obra Pastilhas frente - 50€+iva</p>
+<p>Mão de obra Pastilhas traseiro - 50€+iva</p>
+<p>Mão de obra Pastilhas + discos frente - 75€+iva</p>
+<p>Mão de obra Pastilhas + discos traseiro - 75€+iva</p>
+</div>
+</div>
+
+<div class="card" onclick="toggle(this)">
+<h3>Diagnóstico 💻</h3>
+<div class="details">
+<p>Diagnóstico eletrónico - 50€ + iva</p>
+<p>Diagnóstico manual - 50€/hora + iva</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<div id="popup" onclick="fechar()">
+
+<img id="imagemGrande">
+
+</div>
+
+<section class="booking" id="contato">
+
+  <div class="booking-container">
+
+    <!-- ESQUERDA (FORMULÁRIO) -->
+    <div class="booking-form">
+      <h2>Contato de Serviço</h2>
+
+      <form onsubmit="enviarWhats(event)">
+
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="tel" id="telefone" placeholder="Telefone" required>
+        <input type="text" id="matricula" placeholder="Matrícula" required>
+
+        <select id="servico">
+          <option>Escolha o serviço</option>
+          <option>Troca de óleo</option>
+          <option>Revisão</option>
+          <option>Carregar Gás Ar Condicionado</option>
+          <option>Travões</option>
+          <option>Diagnóstico</option>
+        </select>
+
+        <input type="date" id="data">
+
+        <button type="submit">Enviar Pedido</button>
+
+      </form>
+    </div>
+
+    <!-- DIREITA (INFO / IMAGEM) -->
+    <div class="booking-info">
+      <h2>Atendimento Rápido</h2>
+      <p>
+        Agende o seu serviço com facilidade e rapidez. 
+        Garantimos qualidade, confiança e atendimento profissional.
+      </p>
+
+      <img src="oficina.jpg" alt="Oficina">
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+<p>📞 351+ 937 652 463</p>
+<p>📍 Rua das Cabanas, nº 15 Armazem F. 2645-318 Alcabideche</p>
+
+</footer>
+
+
+<a class="whatsapp" href="https://wa.me/351912345678">
+
+WhatsApp
+
+</a>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

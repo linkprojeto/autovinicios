@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nossa Oficina</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+  background:#0d0d0d;
+  color:white;
+  font-family:Arial;
+}
+</style>
+
+</head>
+
+<body>
+
+<a href="index.html" class="voltar">← Voltar ao site</a>
+
+<section class="galeria" id="galeria">
+
+<h2>Conheça nossa oficina</h2>
+
+<div class="galeria-grid">
+
+<video controls width="100%">
+  <source src="oficina6.mp4" type="video/mp4">
+</video>
+
+<img src="oficina.jpg" onclick="abrirImagem(this)">
+<img src="oficina1.jpg" onclick="abrirImagem(this)">
+<img src="oficina2.jpg" onclick="abrirImagem(this)">
+<img src="oficina3.jpg" onclick="abrirImagem(this)">
+<img src="oficina4.jpg" onclick="abrirImagem(this)">
+<img src="oficina5.jpg" onclick="abrirImagem(this)">
+
+</div>
+
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="fecharImagem()">
+  <img id="imgGrande">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
